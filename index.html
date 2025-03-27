@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-purples: #c058f3;
+        --color-blues: #55ddff;
+      }
+    </style>
+  </head>
+  <body class="font-['Josefin Sans'] text-[10px]">
+    <!-- header -->
+    <section class="bg-linear-to-tr from-purples to-blues">
+      <img
+        src="./assets/img/mountains.svg"
+        alt=""
+        class="relative w-full h-[15rem]"
+      />
+      <header
+        class="absolute -translate-y-50 flex w-full justify-between px-8 items-center"
+      >
+        <h1 class="text-white font-bold text-3xl tracking-[0.5rem]">TODO</h1>
+        <img src="./assets/img/moon.svg" alt="dark mode icon" class="size-7" />
+      </header>
+      <div class="absolute">
+        <div></div>
+        <input type="text" placeholder="Creat a new todo..." />
+      </div>
+    </section>
+    <script src="./assets/js/index.js"></script>
+  </body>
+</html>
