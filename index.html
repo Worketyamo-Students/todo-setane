@@ -32,43 +32,37 @@
         <h1 class="text-white font-bold text-3xl tracking-[0.5rem]">TODO</h1>
         <img src="./assets/img/moon.svg" alt="dark mode icon" class="size-7" />
       </header>
-      <div
-        class="absolute translate-x-9 -translate-y-33 bg-white h-[3.5rem] rounded lg:w-52/100 lg:ml-73 w-82/100 flex justify-center gap-5 items-center"
-      >
-        <div
-          class="border-2 border-solid border-gray-300 size-5 rounded-full text-gray-200 ml-6"
-        ></div>
-        <input
-          id="input"
-          type="text"
-          placeholder="Creat a new todo..."
-          class="w-full h-full outline-none text-[12px] flex-1"
-        />
-      </div>
+      <duv>
+        <div class="lg:flex justify-center w-full">
+          <div
+            class="absolute flex ml-10 sm:translate-l-15 -translate-y-33 bg-white h-[3.5rem] rounded lg:w-52/100 w-82/100 flex lg:-translate-x-5 justify-center gap-5 items-center"
+          >
+            <div
+              class="border-2 border-solid border-gray-300 size-5 rounded-full text-gray-200 ml-6"
+            ></div>
+            <input
+              id="input"
+              type="text"
+              placeholder="Creat a new todo..."
+              class="w-full h-full outline-none text-[12px] flex-1"
+            />
+          </div>
+        </div>
+      </duv>
     </section>
     <!-- main section -->
-    <section class="w-full px-9">
-      <ul
-        class="w-full lg:w-55/100 lg:ml-73 rounded bg-white border-gray-300 -translate-y-13"
-      >
-        <li
-          class="w-full h-[3rem] border-b-2 border-gray-300 flex justify-between items-center gap-5 px-2"
-        >
-          <div
-            class="bg-linear-to-tr from-purples to-blues rounded-full flex justify-center items-center size-5"
-          >
-            <img src="./assets/img/checked.svg" alt="" />
-          </div>
-          <h1 class="h-60/100 flex-1 text-base text-gray-400">Buy some milk</h1>
-          <img src="./assets/img/x.svg" alt="" class="size-4" />
-        </li>
+    <section class="hidden" id="more">
+      <div class="w-full px-9 flex flex-col items-center">
+        <ul
+          class="w-full lg:w-55/100 rounded bg-white border-gray-300 -translate-y-13"
+        ></ul>
         <div
-          class="flex justify-between w-full h-[3rem] items-center text-[0.9rem] text-gray-400 px-3"
+          class="flex border-b-2 border-gray-300 w-50/100 lg:w-55/100 -translate-y-13 bg-white justify-between w-full h-[3rem] items-center text-[0.9rem] text-gray-400 px-3"
         >
-          <h1 class="">items lef</h1>
+          <h1 class="">items left</h1>
           <h1>clear completed</h1>
         </div>
-      </ul>
+      </div>
     </section>
     <section class="w-full flex justify-center">
       <div
