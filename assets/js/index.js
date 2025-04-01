@@ -1,6 +1,18 @@
 let input = document.getElementById("input");
 let ul = document.querySelector("ul");
 const more = document.getElementById("more");
+const img = document.getElementById("mode");
+let isDark = true;
+img.addEventListener("click", (e) => {
+  if (isDark) {
+    img.src = "./assets/img/sun.svg";
+    console.log(e.src);
+  } else {
+    img.src = "../assets/img/moon.svg";
+  }
+  isDark = !isDark;
+});
+
 input.addEventListener("keypress", (e) => {
   let li = document.createElement("li");
   let div = document.createElement("div");
