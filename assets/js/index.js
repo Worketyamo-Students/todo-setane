@@ -3,15 +3,7 @@ let ul = document.querySelector("ul");
 const more = document.getElementById("more");
 const img = document.getElementById("mode");
 let isDark = true;
-img.addEventListener("click", (e) => {
-  if (isDark) {
-    img.src = "./assets/img/sun.svg";
-    console.log(e.src);
-  } else {
-    img.src = "../assets/img/moon.svg";
-  }
-  isDark = !isDark;
-});
+
 
 input.addEventListener("keypress", (e) => {
   let li = document.createElement("li");
@@ -22,7 +14,7 @@ input.addEventListener("keypress", (e) => {
   let hoved = document.createElement("div");
   imgTick.className = "hidden";
   if (e.key == "Enter" && input.value.length !== 0 && input.value !== " ") {
-    if (input.value.length > 8) {
+    if (input.value.length >=5) {
       e.preventDefault();
       li.className =
         "w-full  rounded group  h-[3rem] hover:bg-gray-100 border-b-1 border-gray-300 flex justify-between items-center gap-5 px-2";
@@ -74,7 +66,7 @@ input.addEventListener("keypress", (e) => {
         }
       });
     } else {
-      alert("input should be greather than 8 characters ");
+      alert("input should be greather than 5 characters ");
     }
   }
   const lis = document.querySelectorAll("li");
@@ -109,3 +101,4 @@ reset.addEventListener("click", () => {
     ul.removeChild(ul.firstChild);
   }
 });
+
