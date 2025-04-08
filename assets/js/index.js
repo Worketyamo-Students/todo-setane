@@ -3,13 +3,21 @@ let ul = document.querySelector("ul");
 const more = document.getElementById("more");
 const img = document.getElementById("mode");
 let isDark = true;
+
 img.addEventListener("click", () => {
+  const bg = document.getElementById("bg");
+  console.log(bg.src);
+
   if (isDark) {
     img.src = "./assets/img/sun.svg";
     document.body.classList.add("dark");
+    bg.src = "../assets/img/bg2.png";
+    bg.classList.add("opacity-50");
   } else {
     img.src = "../assets/img/moon.svg";
     document.body.classList.remove("dark");
+    bg.classList.remove("opacity-75");
+    bg.src = "../assets/img/mountains.svg";
   }
   isDark = !isDark;
 });
@@ -23,7 +31,6 @@ function Todo() {
     let hoved = document.createElement("div");
     let li = document.createElement("li");
     li.setAttribute("is_checked", false);
-
     imgTick.className = "hidden";
     if (e.key == "Enter" && input.value.length !== 0 && input.value !== " ") {
       if (input.value.length > 5) {
