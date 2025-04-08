@@ -11,13 +11,13 @@ img.addEventListener("click", () => {
   if (isDark) {
     img.src = "./assets/img/sun.svg";
     document.body.classList.add("dark");
-    bg.src = "../assets/img/bg2.png";
+    bg.src = "./assets/img/bg2.png";
     bg.classList.add("opacity-50");
   } else {
-    img.src = "../assets/img/moon.svg";
+    img.src = "./assets/img/moon.svg";
     document.body.classList.remove("dark");
     bg.classList.remove("opacity-75");
-    bg.src = "../assets/img/mountains.svg";
+    bg.src = "./assets/img/mountains.svg";
   }
   isDark = !isDark;
 });
